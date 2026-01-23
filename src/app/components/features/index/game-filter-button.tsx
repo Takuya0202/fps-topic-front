@@ -23,8 +23,9 @@ export default function GameFilterButton({ gameType }: Props) {
   const isSelected = currentGame === gameType;
 
   const handleClick = () => {
-    // クエリに追加して遷移
-    router.push(`/index?game=${gameType}`);
+    const params = new URLSearchParams(searchParams.toString());
+    params.set("game", gameType);
+    router.push(`/index?${params.toString()}`);
   };
 
   return (

@@ -1,5 +1,7 @@
 import GameFilterButton from "../components/features/index/game-filter-button";
 import Image from "next/image";
+import TagFilterButton from "../components/features/index/tag-filter-button";
+import BlurEffect from "../components/elements/blur-effect";
 export default function IndexPage() {
   return (
     <main
@@ -29,7 +31,20 @@ export default function IndexPage() {
             <GameFilterButton gameType="cod" />
           </li>
         </ul>
+        <ul className="flex items-center space-x-4">
+          <li>
+            <TagFilterButton tag="all" />
+          </li>
+          <li>
+            <TagFilterButton tag="esport" />
+          </li>
+          <li>
+            <TagFilterButton tag="update" />
+          </li>
+        </ul>
       </div>
+
+      <BlurEffect />
     </main>
   );
 }
