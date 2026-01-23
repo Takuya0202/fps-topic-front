@@ -1,0 +1,12 @@
+node_modules
+.next
+.env
+next-env.d.ts
+tsconfig.json
+tsconfig.node.json
+tsconfig.app.json
+tsconfig.base.json
+tsconfig.node.json
+tsconfig.app.json
+tsconfig.base.json
+.prettierrc
