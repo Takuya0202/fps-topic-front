@@ -17,8 +17,12 @@ export default function InputField({
 }: InputFieldProps) {
   return (
     <div className="w-100">
+      <label htmlFor={id} className="block text-sm font-medium mb-1">
+        {label}
+      </label>
       <input
         type={type}
+        id={id}
         className="w-full h-10 border border-gray-300 p-2"
         placeholder={placeholder}
         value={value}
