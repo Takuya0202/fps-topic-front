@@ -17,7 +17,7 @@ export default function InputField({
 }: InputFieldProps) {
   return (
     <div className="w-100">
-      <label htmlFor={id} className="block text-sm font-medium mb-1">
+      <label htmlFor={id}>
         {label}
       </label>
       <input
