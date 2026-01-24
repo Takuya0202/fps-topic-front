@@ -1,6 +1,7 @@
 import Image from "next/image";
 import TagFilterButton from "../components/features/index/tag-filter-button";
 import GameFilterButton from "../components/features/index/game-filter-button";
+import BlurEffect from "../components/elements/blur-effect";
 
 function ArticleCardSkeleton() {
   return (
@@ -68,6 +69,7 @@ export default function IndexLoading() {
           <ArticleCardSkeleton />
         </section>
       </div>
+      <BlurEffect />
     </main>
   );
 }
