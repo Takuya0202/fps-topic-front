@@ -2,6 +2,7 @@ import GameFilterButton from "../components/features/index/game-filter-button";
 import Image from "next/image";
 import TagFilterButton from "../components/features/index/tag-filter-button";
 import BlurEffect from "../components/elements/blur-effect";
+import ArticleCard from "../components/features/index/article-card";
 export default function IndexPage() {
   return (
     <main
@@ -42,6 +43,30 @@ export default function IndexPage() {
             <TagFilterButton tag="update" />
           </li>
         </ul>
+
+        <section className="flex items-center w-full space-y-4 flex-col">
+          <ArticleCard
+            id={1}
+            title="Article 1"
+            thumbnail="/sample-thumbnail-1.svg"
+            author="Author 1"
+            createdAt="2026-01-01"
+          />
+          <ArticleCard
+            id={2}
+            title="Article 2"
+            thumbnail="/sample-thumbnail-1.svg"
+            author="Author 2"
+            createdAt="2026-01-02"
+          />
+          <ArticleCard
+            id={3}
+            title="Article 3"
+            thumbnail="/sample-thumbnail-1.svg"
+            author="Author 3"
+            createdAt="2026-01-03"
+          />
+        </section>
       </div>
 
       <BlurEffect />

@@ -37,7 +37,7 @@ export default function GameFilterButton({ gameType }: Props) {
     >
       {GAME_CONFIG[gameType].icon ? (
         <Image
-          src={GAME_CONFIG[gameType].icon}
+          src={GAME_CONFIG[gameType].icon ?? ""}
           alt={GAME_CONFIG[gameType].label}
           width={24}
           height={24}
