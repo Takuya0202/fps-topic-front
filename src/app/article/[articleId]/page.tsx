@@ -1,8 +1,7 @@
 import BlurEffect from "@/app/components/elements/blur-effect";
-import CommentButton from "@/app/components/elements/buttons/comment-button";
 import HomeButton from "@/app/components/elements/buttons/home-button";
+import CommentButton from "@/app/components/features/comments/comment-button";
 import Image from "next/image";
-import { title } from "process";
 
 async function getArticle(articleId: string) {
   // ダミーAPI
@@ -45,8 +44,8 @@ export default async function ArticlePage({ params }: { params: { articleId: str
         {/* 別の記事紹介 */}
         <h2 className="text-white font-extrabold text-[24px]">More News</h2>
       </div>
-      <div className="absolute bottom-10 right-10">
-        <CommentButton />
+      <div className="absolute bottom-10 right-4">
+        <CommentButton articleId={articleId} />
       </div>
       <BlurEffect />
     </main>
