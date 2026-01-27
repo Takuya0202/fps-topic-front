@@ -66,3 +66,72 @@ body {
   background: var(--color-red);
   animation: pulse-red 2.5s infinite ease-in-out;
 }
+
+/* BlockNote スマホ対応 */
+.bn-container {
+  padding: 2px !important;
+}
+
+.bn-editor {
+  padding-inline: 24px !important;
+  background-color: transparent !important;
+}
+
+/* 見出しサイズ調整 */
+.bn-editor h1 {
+  font-size: 1.5rem !important;
+  margin-bottom: 0.5rem !important;
+}
+
+.bn-editor h2 {
+  font-size: 1.25rem !important;
+  margin-bottom: 0.5rem !important;
+}
+
+.bn-editor p {
+  font-size: 0.875rem !important;
+}
+
+/* スマホ用 */
+@media (max-width: 640px) {
+  .bn-editor h1 {
+    font-size: 1.25rem !important;
+  }
+
+  .bn-editor h2 {
+    font-size: 1.1rem !important;
+  }
+
+  .bn-editor p {
+    font-size: 0.8rem !important;
+  }
+}
+
+/* モーダルアニメーション */
+@keyframes slide-up {
+  from {
+    transform: translateY(100%);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-slide-up {
+  animation: slide-up 0.3s ease-out forwards;
+}
+
+.animate-fade-in {
+  animation: fade-in 0.3s ease-out forwards;
+}
