@@ -15,7 +15,7 @@ export default function CommentPost({ content, username, userIcon }: props) {
         </div>
         <span className="text-white text-[12px]">{username}</span>
       </div>
-      <div className="bg-darker rounded-[10px] p-4 ml-10 w-full">
+      <div className="bg-darker rounded-[10px] p-4 ml-10 w-[90%] shadow">
         <span className="text-white text-[12px]">{content}</span>
       </div>
     </div>

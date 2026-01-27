@@ -1,8 +1,5 @@
-import HomeButton from "./components/elements/buttons/home-button";
+import { redirect } from "next/navigation";
+
 export default function Home() {
-  return (
-    <div className="">
-      <HomeButton />
-    </div>
-  );
+  redirect("/index");
 }
